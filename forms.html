@@ -1,0 +1,225 @@
+```html
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KairoGoogle | Formuláře</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+    <a class="mini-logo" href="index.html">Kairo<span>Google</span></a>
+    <nav>
+        <a href="index.html">Vyhledávání</a>
+        <a href="image.html">Obrázky</a>
+        <a href="advanced.html">Pokročilé</a>
+        <a class="active" href="forms.html">Formuláře</a>
+    </nav>
+</header>
+
+<main class="page-container">
+
+    <h1 class="page-title">HTML formuláře</h1>
+
+    <p class="page-description">
+        Ukázka různých formulářových prvků a možností,
+        které nabízí HTML5.
+    </p>
+
+    <div class="demo-note">
+        <strong>Upozornění:</strong> Tato stránka slouží pouze
+        k demonstraci formulářových prvků. Údaje se nikam
+        neodesílají a formuláře nejsou funkční.
+    </div>
+
+    <form>
+
+        <section class="form-card">
+            <h2>1. Textová a kontaktní pole</h2>
+
+            <div class="form-group">
+                <label for="name">Jméno:</label>
+                <input type="text" id="name" placeholder="Zadejte jméno">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="vas@email.cz">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Heslo:</label>
+                <input type="password" id="password" placeholder="Zadejte heslo">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" placeholder="+420 123 456 789">
+            </div>
+
+            <div class="form-group">
+                <label for="website">Webová stránka:</label>
+                <input type="url" id="website" placeholder="https://example.com">
+            </div>
+        </section>
+
+        <section class="form-card">
+            <h2>2. Datum a číselné hodnoty</h2>
+
+            <div class="form-group">
+                <label for="date">Datum:</label>
+                <input type="date" id="date">
+            </div>
+
+            <div class="form-group">
+                <label for="time">Čas:</label>
+                <input type="time" id="time">
+            </div>
+
+            <div class="form-group">
+                <label for="number">Číselná hodnota:</label>
+                <input type="number" id="number" min="0" max="100" placeholder="0–100">
+            </div>
+
+            <div class="form-group">
+                <label for="range">Rozsah hodnot:</label>
+                <input type="range" id="range" min="0" max="100" value="50">
+            </div>
+        </section>
+
+        <section class="form-card">
+            <h2>3. Výběrové prvky</h2>
+
+            <div class="form-group">
+                <label for="country">Vyberte zemi:</label>
+                <select id="country">
+                    <option value="">Vyberte možnost</option>
+                    <option>Česká republika</option>
+                    <option>Slovensko</option>
+                    <option>Polsko</option>
+                    <option>Německo</option>
+                    <option>Rakousko</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="browser">Oblíbený prohlížeč:</label>
+                <input list="browsers" id="browser" placeholder="Vyberte prohlížeč">
+                <datalist id="browsers">
+                    <option value="Google Chrome">
+                    <option value="Mozilla Firefox">
+                    <option value="Microsoft Edge">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </div>
+        </section>
+
+        <section class="form-card">
+            <h2>4. Checkbox a radio</h2>
+
+            <div class="form-group">
+                <fieldset>
+                    <legend>Vaše zájmy:</legend>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="sport">
+                        Sport
+                    </label>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="technology">
+                        Technologie
+                    </label>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="music">
+                        Hudba
+                    </label>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="travel">
+                        Cestování
+                    </label>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <fieldset>
+                    <legend>Vyberte preferovaný systém:</legend>
+
+                    <label class="choice">
+                        <input type="radio" name="system" value="windows">
+                        Windows
+                    </label>
+
+                    <label class="choice">
+                        <input type="radio" name="system" value="mac">
+                        macOS
+                    </label>
+
+                    <label class="choice">
+                        <input type="radio" name="system" value="linux">
+                        Linux
+                    </label>
+                </fieldset>
+            </div>
+        </section>
+
+        <section class="form-card">
+            <h2>5. Text, barva a soubor</h2>
+
+            <div class="form-group">
+                <label for="message">Textová zpráva:</label>
+                <textarea id="message" placeholder="Napište svůj komentář..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="color">Výběr barvy:</label>
+                <input type="color" id="color" value="#4285f4">
+            </div>
+
+            <div class="form-group">
+                <label for="file">Nahrání souboru:</label>
+                <input type="file" id="file">
+            </div>
+        </section>
+
+        <section class="form-card">
+            <h2>6. Tlačítka</h2>
+
+            <p class="page-description">
+                Následující tlačítka jsou pouze ukázková
+                a nejsou aktivní.
+            </p>
+
+            <div class="buttons">
+                <button type="button" class="primary-button disabled-demo" disabled>
+                    Odeslat formulář
+                </button>
+
+                <button type="reset" class="disabled-demo" disabled>
+                    Vymazat údaje
+                </button>
+            </div>
+        </section>
+
+    </form>
+
+</main>
+
+<footer>
+    <div class="footer-links">
+        <a href="portfolio.html">Moje portfolio</a>
+        <a href="citace.md">Citace a zdroje</a>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2FKairo2011.github.io%2Fgooglesearch%2Fforms.html">HTML Validator</a>
+        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FKairo2011.github.io%2Fgooglesearch%2Fstyle.css">CSS Validator</a>
+    </div>
+    <p>© 2026 KairoGoogle | Student project</p>
+</footer>
+
+</body>
+</html>
+```
