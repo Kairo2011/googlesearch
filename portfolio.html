@@ -1,150 +1,80 @@
-```html
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Osobní portfolio Kairo.">
-    <title>Kairo | Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <meta name="description" content="Portfolio autora projektu KairoGoogle.">
+    <title>Portfolio | KairoGoogle</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="topbar">
+        <a class="brand-small" href="index.html">Google<span>kairo</span></a>
+        <nav>
+            <a href="index.html">Vyhledávání</a>
+            <a href="images.html">Obrázky</a>
+            <a href="advanced.html">Pokročilé</a>
+            <a href="forms.html">Formuláře</a>
+        </nav>
+    </header>
 
-<header class="portfolio-header">
-    <a href="portfolio.html" class="brand">KAIRO<span>.</span></a>
+    <main class="content-page">
+        <section class="page-heading">
+            <p class="eyebrow">KAIROGOOGLE / AUTOR</p>
+            <h1>Moje <span>portfolio</span></h1>
+            <p>Informace o autorovi a školním projektu.</p>
+        </section>
 
-    <nav>
-        <a href="#about">O mně</a>
-        <a href="#projects">Projekty</a>
-        <a href="#contact">Kontakt</a>
-        <a href="index.html">KairoGoogle</a>
-    </nav>
-</header>
-
-<main>
-
-    <section class="hero">
-        <div class="hero-content">
-            <p class="eyebrow">OSOBNÍ PORTFOLIO</p>
-
-            <h1>Ahoj, jsem <span>Kairo.</span></h1>
-
-            <h2>Student. Kreativní mysl. Začínající tvůrce.</h2>
-
-            <p class="hero-description">
-                Zajímám se o technologie, kreativitu a osobní rozvoj.
-                Rád se učím nové věci a proměňuji nápady ve skutečné projekty.
-            </p>
-
-            <a href="#projects" class="portfolio-button">
-                Prohlédnout projekty <span>→</span>
-            </a>
-        </div>
-
-        <div class="hero-decoration">
-            <div class="decoration-card">
-                <span class="decoration-dot"></span>
-                <span class="decoration-dot"></span>
-                <span class="decoration-dot"></span>
-                <div class="decoration-logo">K.</div>
-                <p>THINK. CREATE. IMPROVE.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="content-section" id="about">
-        <p class="eyebrow">01 / O MNĚ</p>
-
-        <h2>Neustále se učím a posouvám dál.</h2>
-
-        <p class="section-text">
-            Jsem student se zájmem o nové technologie,
-            digitální tvorbu a kreativní nápady.
-            V současnosti se učím základy webového vývoje
-            pomocí HTML a CSS.
-        </p>
-
-        <div class="skills">
-            <div class="skill">
-                <span>01</span>
-                <h3>HTML</h3>
-                <p>Struktura webových stránek</p>
-            </div>
-
-            <div class="skill">
-                <span>02</span>
-                <h3>CSS</h3>
-                <p>Vzhled a design webu</p>
-            </div>
-
-            <div class="skill">
-                <span>03</span>
-                <h3>Kreativita</h3>
-                <p>Vlastní nápady a řešení</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="content-section projects-section" id="projects">
-        <p class="eyebrow">02 / MOJE PROJEKTY</p>
-
-        <h2>Co jsem vytvořil.</h2>
-
-        <div class="project-grid">
-
-            <article class="project-card">
-                <div class="project-number">PROJECT 01</div>
-                <h3>KairoGoogle</h3>
+        <section class="glass-panel portfolio-intro">
+            <div class="portfolio-avatar">K</div>
+            <div>
+                <p class="eyebrow">STUDENT / WEB DEVELOPMENT</p>
+                <h2>Kairo</h2>
                 <p>
-                    Vlastní vyhledávací stránka inspirovaná
-                    designem Google. Projekt vytvořený
-                    pomocí HTML a CSS.
+                    Jsem student se zájmem o informační technologie,
+                    webové stránky a moderní digitální design.
+                    Tento projekt jsem vytvořil jako školní práci
+                    zaměřenou na HTML, CSS a JavaScript.
                 </p>
-                <a href="index.html">Zobrazit projekt →</a>
+            </div>
+        </section>
+
+        <section class="info-grid">
+            <article class="info-card">
+                <h2>O projektu</h2>
+                <p>KairoGoogle je vlastní návrh vyhledávací stránky inspirované vzhledem Google.</p>
             </article>
 
-            <article class="project-card">
-                <div class="project-number">PROJECT 02</div>
-                <h3>HTML Forms</h3>
-                <p>
-                    Ukázka různých formulářových prvků
-                    a možností, které nabízí HTML5.
-                </p>
-                <a href="forms.html">Zobrazit projekt →</a>
+            <article class="info-card">
+                <h2>Použité technologie</h2>
+                <p>HTML5, CSS3 a JavaScript. Projekt obsahuje několik propojených stránek a formuláře.</p>
             </article>
 
+            <article class="info-card">
+                <h2>Cíl projektu</h2>
+                <p>Procvičit tvorbu webových stránek, formulářů, navigace a responzivního designu.</p>
+            </article>
+        </section>
+
+        <section class="glass-panel">
+            <h2>Odkazy na projekt</h2>
+            <p><a href="index.html">Přejít na KairoGoogle</a></p>
+            <p><a href="citace.html">Zobrazit seznam citací</a></p>
+            <p><a href="citace.md">Otevřít soubor citací Markdown</a></p>
+            <p><a href="https://github.com/Kairo2011/googlesearch" target="_blank" rel="noopener noreferrer">GitHub repozitář</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span>© 2026 KairoGoogle</span>
+        <div>
+            <a href="index.html">Domů</a>
+            <a href="citace.html">Citace</a>
+            <a href="citace.md">Citace MD</a>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkairo2011.github.io%2Fgooglesearch%2Fportfolio.html">HTML validátor</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkairo2011.github.io%2Fgooglesearch%2Fstyle.css">CSS validátor</a>
         </div>
-    </section>
-
-    <section class="contact-section" id="contact">
-        <p class="eyebrow">03 / KONTAKT</p>
-
-        <h2>Každý projekt je nový začátek.</h2>
-
-        <p>
-            Mé projekty a další tvorbu najdeš na GitHubu.
-        </p>
-
-        <a href="https://github.com/Kairo2011"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="portfolio-button">
-            Navštívit GitHub →
-        </a>
-    </section>
-
-</main>
-
-<footer>
-    <div class="footer-links">
-        <a href="index.html">KairoGoogle</a>
-        <a href="citace.md">Citace a zdroje</a>
-        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2FKairo2011.github.io%2Fgooglesearch%2Fportfolio.html">HTML Validator</a>
-        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FKairo2011.github.io%2Fgooglesearch%2Fportfolio.css">CSS Validator</a>
-    </div>
-    <p>© 2026 Kairo. Personal portfolio.</p>
-</footer>
-
+    </footer>
 </body>
 </html>
-```

@@ -1,71 +1,152 @@
-```html
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Search</title>
+    <meta name="description" content="KairoGoogle – moderní vyhledávání na internetu.">
+    <title>KairoGoogle – Moderní vyhledávání</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <nav>
-        <a href="index.html">Google Search</a>
-        <a href="image.html">Obrázky</a>
-        <a href="advanced.html">Pokročilé vyhledávání</a>
-        <a href="forms.html">Formuláře</a>
-    </nav>
+    <header class="topbar">
+        <a href="index.html" class="wordmark">
+            <span class="kairo">kairo</span>
+            <span class="google-letters">
+                <i>G</i><b>o</b><em>o</em><strong>g</strong><small>l</small><u>e</u>
+            </span>
+        </a>
 
-    <main class="google">
+        <nav>
+            <a class="active" href="index.html">Hledat</a>
+            <a href="images.html">Obrázky</a>
+            <a href="advanced.html">Pokročilé</a>
+            <a href="forms.html">Formuláře</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+    </header>
 
-        <h1>Google</h1>
+    <main class="home">
 
-        <form action="https://www.google.com/search" method="GET">
+        <div class="eyebrow">
+            <span class="pulse"></span>
+            TVŮJ PROSTOR PRO OBJEVOVÁNÍ
+        </div>
+
+        <h1 class="main-logo">
+            <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+            <span class="kairo-word">kairo</span>
+        </h1>
+
+        <p class="tagline">
+            Najdi, co hledáš. Objev, co nečekáš.
+        </p>
+
+        <form class="searchbar" action="https://www.google.com/search" method="get">
+
+            <label class="visually-hidden" for="q">
+                Vyhledávaný výraz
+            </label>
+
+            <span class="search-symbol">⌕</span>
 
             <input
-                type="text"
+                id="q"
                 name="q"
-                placeholder="Hledat na Googlu..."
+                type="search"
+                placeholder="Zadej, co tě zajímá..."
                 required
             >
 
-            <div class="buttons">
+            <button class="clear-btn" type="reset" aria-label="Vymazat">
+                ×
+            </button>
 
-                <button type="submit">
-                    Google Search
-                </button>
-
-                <button type="submit" name="btnI" value="1">
-                    I'm Feeling Lucky
-                </button>
-
-            </div>
+            <button class="go-btn" type="submit" aria-label="Vyhledat">
+                ↗
+            </button>
 
         </form>
 
+        <div class="home-actions">
+            <button class="button button-primary" id="search-button" type="button">
+                Vyhledat na Googlu ↗
+            </button>
+
+            <a class="button button-soft" href="advanced.html">
+                Pokročilé hledání
+            </a>
+        </div>
+
+        <section class="shortcuts">
+
+            <a class="shortcut" href="images.html">
+                <span class="shortcut-icon purple">▧</span>
+                <span>
+                    <b>Obrázky</b>
+                    <small>Najdi vizuální inspiraci</small>
+                </span>
+                <span class="arrow">↗</span>
+            </a>
+
+            <a class="shortcut" href="advanced.html">
+                <span class="shortcut-icon blue">⌕</span>
+                <span>
+                    <b>Pokročilé hledání</b>
+                    <small>Zpřesni si výsledky</small>
+                </span>
+                <span class="arrow">↗</span>
+            </a>
+
+            <a class="shortcut" href="forms.html">
+                <span class="shortcut-icon green">☷</span>
+                <span>
+                    <b>HTML formuláře</b>
+                    <small>Interaktivní ukázka prvků</small>
+                </span>
+                <span class="arrow">↗</span>
+            </a>
+
+        </section>
+
+        <p class="disclaimer">
+            KairoGoogle je školní projekt.
+            Výsledky vyhledávání zajišťuje služba Google.
+        </p>
+
     </main>
 
-    <footer>
+    <footer class="footer">
 
-        <a href="https://github.com/Kairo2011">
-            Moje portfolio
-        </a>
+        <span>
+            © 2026 KairoGoogle • Vytvořil Kairo
+        </span>
 
-        <a href="citace.md">
-            Citace a zdroje
-        </a>
+        <div>
+            <a href="portfolio.html">Moje portfolio</a>
+            <a href="citace.html">Citace a zdroje</a>
+            <a href="citace.md">Citace (MD)</a>
 
-        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2FKairo2011.github.io%2Fgooglesearch%2F">
-            HTML Validator
-        </a>
+            <a target="_blank" rel="noopener noreferrer"
+               href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkairo2011.github.io%2Fgooglesearch%2Findex.html">
+                HTML validátor
+            </a>
 
-        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FKairo2011.github.io%2Fgooglesearch%2Fstyle.css">
-            CSS Validator
-        </a>
+            <a target="_blank" rel="noopener noreferrer"
+               href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkairo2011.github.io%2Fgooglesearch%2Fstyle.css">
+                CSS validátor
+            </a>
+        </div>
 
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
 </html>
-```

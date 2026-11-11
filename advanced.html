@@ -1,75 +1,71 @@
-```html
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KairoGoogle | Pokročilé vyhledávání</title>
+    <meta name="description" content="Pokročilé vyhledávání KairoGoogle.">
+    <title>Pokročilé vyhledávání | KairoGoogle</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="topbar">
+        <a class="brand-small" href="index.html">Google<span>kairo</span></a>
+        <nav>
+            <a href="index.html">Vyhledávání</a>
+            <a href="images.html">Obrázky</a>
+            <a href="forms.html">Formuláře</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+    </header>
 
-<header class="topbar">
-    <a class="mini-logo" href="index.html">Kairo<span>Google</span></a>
-    <nav>
-        <a href="index.html">Vyhledávání</a>
-        <a href="image.html">Obrázky</a>
-        <a class="active" href="advanced.html">Pokročilé</a>
-        <a href="forms.html">Formuláře</a>
-    </nav>
-</header>
+    <main class="content-page">
+        <section class="page-heading">
+            <p class="eyebrow">KAIROGOOGLE / NASTAVENÍ</p>
+            <h1>Pokročilé <span>vyhledávání</span></h1>
+            <p>Upřesni vyhledávání pomocí několika různých podmínek.</p>
+        </section>
 
-<main class="page-container">
+        <section class="glass-panel">
+            <form action="https://www.google.com/search" method="get" class="advanced-form">
+                <div class="form-field">
+                    <label for="all-words">Všechna tato slova</label>
+                    <input id="all-words" type="text" name="as_q"
+                           placeholder="Slova, která musí být ve výsledku">
+                </div>
 
-    <h1 class="page-title">Pokročilé vyhledávání</h1>
+                <div class="form-field">
+                    <label for="exact-phrase">Přesná fráze</label>
+                    <input id="exact-phrase" type="text" name="as_epq"
+                           placeholder="Přesné slovní spojení">
+                </div>
 
-    <p class="page-description">
-        Najděte přesně to, co hledáte. Pomocí následujících polí
-        můžete upřesnit svůj vyhledávací dotaz.
-    </p>
+                <div class="form-field">
+                    <label for="any-words">Alespoň jedno z těchto slov</label>
+                    <input id="any-words" type="text" name="as_oq"
+                           placeholder="Několik slov oddělených mezerou">
+                </div>
 
-    <h2 class="section-title">Najít stránky obsahující...</h2>
+                <div class="form-field">
+                    <label for="excluded-words">Žádné z těchto slov</label>
+                    <input id="excluded-words" type="text" name="as_eq"
+                           placeholder="Slova, která nechceš ve výsledcích">
+                </div>
 
-    <form class="advanced-form" action="https://www.google.com/search" method="GET">
+                <button type="submit" class="primary-button">Spustit pokročilé vyhledávání</button>
+            </form>
+        </section>
+    </main>
 
-        <div class="advanced-row">
-            <label for="all">Všechna tato slova:</label>
-            <input type="text" id="all" name="as_q">
+    <footer class="site-footer">
+        <span>© 2026 KairoGoogle</span>
+        <div>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="citace.html">Citace</a>
+            <a href="citace.md">Citace MD</a>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkairo2011.github.io%2Fgooglesearch%2Fadvanced.html">HTML validátor</a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkairo2011.github.io%2Fgooglesearch%2Fstyle.css">CSS validátor</a>
         </div>
-
-        <div class="advanced-row">
-            <label for="exact">Přesné slovní spojení:</label>
-            <input type="text" id="exact" name="as_epq">
-        </div>
-
-        <div class="advanced-row">
-            <label for="any">Kterékoli z těchto slov:</label>
-            <input type="text" id="any" name="as_oq">
-        </div>
-
-        <div class="advanced-row">
-            <label for="none">Žádné z těchto slov:</label>
-            <input type="text" id="none" name="as_eq">
-        </div>
-
-        <button class="primary-button" type="submit">
-            Pokročilé vyhledávání
-        </button>
-
-    </form>
-
-</main>
-
-<footer>
-    <div class="footer-links">
-        <a href="portfolio.html">Moje portfolio</a>
-        <a href="citace.md">Citace a zdroje</a>
-        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2FKairo2011.github.io%2Fgooglesearch%2Fadvanced.html">HTML Validator</a>
-        <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FKairo2011.github.io%2Fgooglesearch%2Fstyle.css">CSS Validator</a>
-    </div>
-    <p>© 2026 KairoGoogle | Student project</p>
-</footer>
-
+    </footer>
 </body>
 </html>
-```
